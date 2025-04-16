@@ -11,8 +11,7 @@ test('Login To application using POM', async({page}) =>
 {
 await page.goto('https://iamsdbhosale.github.io/HumanRobot/crud-xml-app.html');
 
-const loginPage=new LoginPage (page); // c
-// rating object for LoginPage class
+const loginPage=new LoginPage (page); // crating object for LoginPage class
 await loginPage.verifySignin();
 await loginPage.logintoApplication(testdata.username,testdata.password); //calling user defined function with object
 //await loginPage.logintoApplication(); //calling user defined function with object
